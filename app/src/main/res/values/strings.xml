@@ -3,4 +3,7 @@
     <string name="textView">Select a heart rate</string>
     <string name="txtViewPulse">Pulse:</string>
     <string name="txtViewPulseRate">99.9</string>
+    <string name="textview">Range:</string>
+    <string name="textViewRangeValue">Moderate</string>
+    <string name="textViewDescription"></string>
 </resources>

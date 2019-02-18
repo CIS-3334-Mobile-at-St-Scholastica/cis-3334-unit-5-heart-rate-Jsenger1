@@ -4,7 +4,6 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HeartRateTracker-PartStart-2018.iml" filepath="$PROJECT_DIR$/HeartRateTracker-PartStart-2018.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
-      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/cis-3334-unit-5-heart-rate-Jsenger1.iml" filepath="$PROJECT_DIR$/cis-3334-unit-5-heart-rate-Jsenger1.iml" />
     </modules>
   </component>

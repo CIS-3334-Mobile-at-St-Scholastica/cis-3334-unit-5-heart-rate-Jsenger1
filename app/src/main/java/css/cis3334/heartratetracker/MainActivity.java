@@ -15,6 +15,7 @@ public class MainActivity extends AppCompatActivity {
     ArrayAdapter<HeartRate> hrAdapter;
     ListView lvHeartRate;
     TextView tvSelect;
+    TextView description;
 
 
     @Override
@@ -24,6 +25,8 @@ public class MainActivity extends AppCompatActivity {
 
         lvHeartRate = (ListView) findViewById(R.id.listViewHeartRates);
         tvSelect = (TextView) findViewById(R.id.textView);
+
+
 
         heartRateList = new HeartRateList();
         heartRateList.InitRandomElderly();

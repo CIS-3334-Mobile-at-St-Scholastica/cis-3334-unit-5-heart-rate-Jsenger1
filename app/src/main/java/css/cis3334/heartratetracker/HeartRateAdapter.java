@@ -10,6 +10,8 @@ import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
+import org.w3c.dom.Text;
+
 /**
  * Created by Tom Gibbons in Feb 2017.
  * For the CIS 3334 class at St. Scholastica
@@ -51,7 +53,29 @@ public class HeartRateAdapter  extends ArrayAdapter<HeartRate> {
         HeartRate hr = hrList.getHeartRate(position);
 
         TextView tvPulse=(TextView)view.findViewById(R.id.textViewPulse);
+        TextView description = (TextView) view.findViewById(R.id.textViewDescription);
         tvPulse.setText(hr.getPulse().toString());
+
+        if(hr.getRangeName().equals("Moderate")){
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorLightYellow));
+        }
+        if(hr.getRangeName().equals("Endurance")){
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorYellow));
+        }
+        if(hr.getRangeName().equals("Aerobic")){
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorOrange));
+        }
+        if(hr.getRangeName().equals("Anaerobic")){
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorRedOrange));
+        }
+        if(hr.getRangeName().equals("Hot zone")){
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorRed));
+        }
+        if(hr.getRangeName().equals("Resting")){
+            tvPulse.setTextColor(ContextCompat.getColor(context, R.color.colorGreen));
+        }
+        description.setText(hr.getRangeDescrtiption());
+
 
         return(view);
     }
